@@ -1,0 +1,35 @@
+                                                                                                                                                                                        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Gym Tracker</h1>
+        <p>Track your progress, one set at a time.</p>
+
+        <form id="workoutForm">
+            <input id="exercise" placeholder="Exercise name" required>
+            <input id="weight" type="number" min="0"
+                   placeholder="Weight (lbs)" required>
+            <input id="reps" type="number" min="1"
+                   placeholder="Reps" required>
+            <button type="submit">Log Workout</button>
+        </form>
+
+        <h2>Workout History</h2>
+        <ul id="workoutList"></ul>
+
+        <button id="clearButton" type="button">
+            Clear All Workouts
+        </button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
